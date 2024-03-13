@@ -52,8 +52,8 @@ function Connect({sendProvider, sendWallet}) {
                         </div>
                         <nav className="hidden md:flex lg:flex justify-between flex-1 pl-10">
                             <div className="flex items-center lg:text-md space-x-2 lg:space-x-8 drop-shadow-xl text-white">
-                                <a href="https://www.mode.network/" target="_blank" className="hover:text-gega-sky transition duration-500 tracking-widest"><i className="fa-brands fa-hive"></i> MODE</a>
-                                <a href="https://app.mode.network/" target="_blank" className="hover:text-gega-sky transition duration-500 tracking-widest text-blue-500"><i className="fa-solid fa-faucet"></i> BRIDGE</a>
+                                <a href="https://crossfi.org/" target="_blank" className="hover:text-gega-sky transition duration-500 tracking-widest"><i className="fa-brands fa-hive"></i> CrossFi</a>
+                                <a href="https://docs.crossfi.org/crossfi-chain" target="_blank" className="hover:text-gega-sky transition duration-500 tracking-widest text-blue-500"><i className="fa-solid fa-faucet"></i> Docs</a>
                                 <div className="relative inline-block tooltipMarket hover:line-through duration-700 tracking-widest cursor-pointer">
                                     <a className="tooltipMarket ">NFT Marketplace</a>
                                     <div className="flex z-20 absolute bottom-6 justify-start items-center invisible tooltipMarket-item">
@@ -78,8 +78,8 @@ function Connect({sendProvider, sendWallet}) {
                     <header id="menubar" className={`${menuBarActive ? "text-white font-gemunu uppercase change pt-2" : "text-white font-gemunu uppercase hidden pt-2"}`}>
                         <nav className="">
                             <div className="flex flex-col items-end space-y-1 pr-2">
-                                <a href="https://www.mode.network/" target="_blank" className="hover:text-gega-melon transition duration-500 tracking-widest"><i className="fa-brands fa-hive"></i> MODE</a>
-                                <a href="https://app.mode.network/" target="_blank" className="hover:text-gega-melon transition duration-500 tracking-widest"><i className="fa-solid fa-faucet"></i> BRIDGE</a>
+                                <a href="https://crossfi.org/" target="_blank" className="hover:text-gega-melon transition duration-500 tracking-widest"><i className="fa-brands fa-hive"></i> CrossFi</a>
+                                <a href="https://docs.crossfi.org/crossfi-chain" target="_blank" className="hover:text-gega-melon transition duration-500 tracking-widest"><i className="fa-solid fa-faucet"></i> Docs</a>
                                 <a href="/" className="hover:text-gega-melon transition duration-500 tracking-widest">Contact</a>
                                 <button className="hover:text-gega-melon transition duration-500 tracking-widest rounded-lg border-2 border-white px-1 py-1" onClick={ () => {
                                     if (account) return; 

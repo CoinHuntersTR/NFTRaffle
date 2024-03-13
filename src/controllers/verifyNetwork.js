@@ -1,12 +1,12 @@
 export const verifyNetwork = async () => {
 
     // Sepolia Network Verifying
-    const modeID = await '0x868b';
+    const crossfiID = await '0x103D';
     const chainId = await window.ethereum.request({
         method: 'eth_chainId',
       });
     
-    if (chainId === modeID){
+    if (chainId === crossfiID){
         console.log("Bravo!, you are on the correct network")
         
     } else {
@@ -17,9 +17,9 @@ export const verifyNetwork = async () => {
         
             await window.ethereum.request({
                 method: 'wallet_switchEthereumChain',
-                params: [{ chainId: modeID}],
+                params: [{ chainId: crossfiID}],
             });
-            console.log("You have succefully switched to Taiko Jolnir Testnet")
+            console.log("You have succefully switched to CrossFi Testnet")
         
         } catch (switchError) {
             
@@ -31,11 +31,11 @@ export const verifyNetwork = async () => {
                     await window.ethereum.request({
                         method: 'wallet_addEthereumChain',
                         params: [
-                        { chainId: '0x868b', 
-                        chainName:'Mode Mainnet',
-                        rpcUrls:['https://mainnet.mode.network'],
+                        { chainId: '0x103D', 
+                        chainName:'CrossFi Testnet Chain',
+                        rpcUrls:['https://rpc.testnet.ms'],
                         nativeCurrency: {
-                        symbol:'ETH', // 2-6 characters long
+                        symbol:'XFI', // 2-6 characters long
                     decimals: 18
                     }
                         

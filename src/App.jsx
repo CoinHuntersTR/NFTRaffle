@@ -235,7 +235,7 @@ function App() {
                 <div className='flex flex-row space-x-2 my-3'>
                   <div className='flex flex-row space-x-2'>
                     <p className='font-bold tracking-wider'>Collection:</p>
-                    <p>Taiko Bulls</p>
+                    <p>CrossFi Bulls</p>
                   </div>
                   <div className='flex flex-row space-x-2'>
                     <p className='font-bold tracking-wider'>Number:</p>
@@ -272,7 +272,7 @@ function App() {
                   <div className='flex flex-row space-x-2 my-3'>
                     <p className='font-bold tracking-wider'>Cost:</p>
                     <p>{ticketCost}</p>
-                    <p>$ETH</p>
+                    <p>$XFI</p>
                   </div>
                   <div className='flex flex-row space-x-2 my-3'>
                     <p className='font-bold tracking-wider'>Limit:</p>
@@ -409,7 +409,7 @@ function App() {
                 </a>
                 <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
-                        <a href="https://github.com/srknssmn" target="_blank" className="hover:underline me-4 md:me-6">Personal Github</a>
+                        <a href="https://github.com/CoinHuntersTR" target="_blank" className="hover:underline me-4 md:me-6">Github</a>
                     </li>
                     <li>
                         <a href="https://coinhunterstr.com/" target="_blank" className="hover:underline me-4 md:me-6">WEB</a>

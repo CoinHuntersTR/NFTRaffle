@@ -887,4 +887,4 @@ export const NFT_ABI = [
         "stateMutability": "nonpayable",
         "type": "function"
     }
-];
+]
