@@ -1,4 +1,4 @@
-<h1>Monster Cross Fi</h1>
+# NFT Raffle Apps
 <p>&nbsp;</p>
 <p>Cross Finance ödüllü testnetinde kullanıcıların Cross Fi EVM ağıyla etkileşim kurması için Monster Cross Fi geliştir. Yapmanız gerekenler;</p>
 <ul>
