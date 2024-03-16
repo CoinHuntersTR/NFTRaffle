@@ -53,7 +53,9 @@ function Connect({sendProvider, sendWallet}) {
                         <nav className="hidden md:flex lg:flex justify-between flex-1 pl-10">
                             <div className="flex items-center lg:text-md space-x-2 lg:space-x-8 drop-shadow-xl text-white">
                                 <a href="https://crossfi.org/" target="_blank" className="hover:text-gega-sky transition duration-500 tracking-widest"><i className="fa-brands fa-hive"></i> CrossFi</a>
-                                <a href="https://docs.crossfi.org/crossfi-chain" target="_blank" className="hover:text-gega-sky transition duration-500 tracking-widest text-blue-500"><i className="fa-solid fa-faucet"></i> Docs</a>
+                                <a href="https://docs.crossfi.org/crossfi-chain" target="_blank" className="hover:text-gega-sky transition duration-500 tracking-widest text-blue-500"><i class="fa-solid fa-file"></i> Docs</a>
+                                <a href="https://testnet-faucet-nft.vercel.app/" target="_blank" className="hover:text-white transition duration-500 tracking-widest text-blue-500"><i className="fa-solid fa-faucet"></i> Faucet</a>
+                                <a href="https://crossfi-nft-raffle.vercel.app/" target="_blank" className="hover:text-yellow-500 transition duration-500 tracking-widest"><i class="fa-solid fa-paw"></i> F*ck Bear App</a>
                                 <div className="relative inline-block tooltipMarket hover:line-through duration-700 tracking-widest cursor-pointer">
                                     <a className="tooltipMarket ">NFT Marketplace</a>
                                     <div className="flex z-20 absolute bottom-6 justify-start items-center invisible tooltipMarket-item">
@@ -79,8 +81,9 @@ function Connect({sendProvider, sendWallet}) {
                         <nav className="">
                             <div className="flex flex-col items-end space-y-1 pr-2">
                                 <a href="https://crossfi.org/" target="_blank" className="hover:text-gega-melon transition duration-500 tracking-widest"><i className="fa-brands fa-hive"></i> CrossFi</a>
-                                <a href="https://docs.crossfi.org/crossfi-chain" target="_blank" className="hover:text-gega-melon transition duration-500 tracking-widest"><i className="fa-solid fa-faucet"></i> Docs</a>
-                                <a href="/" className="hover:text-gega-melon transition duration-500 tracking-widest">Contact</a>
+                                <a href="https://docs.crossfi.org/crossfi-chain" target="_blank" className="hover:text-gega-melon transition duration-500 tracking-widest"><i class="fa-solid fa-file"></i> Docs</a>
+                                <a href="https://testnet-faucet-nft.vercel.app/" target="_blank" className="hover:text-white transition duration-500 tracking-widest text-blue-500"><i className="fa-solid fa-faucet"></i> Faucet</a>
+                                <a href="https://crossfi-nft-raffle.vercel.app/" target="_blank" className="hover:text-yellow-500 transition duration-500 tracking-widest"><i class="fa-solid fa-paw"></i> F*ck Bear App</a>
                                 <button className="hover:text-gega-melon transition duration-500 tracking-widest rounded-lg border-2 border-white px-1 py-1" onClick={ () => {
                                     if (account) return; 
                                     connect() }}>
