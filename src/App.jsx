@@ -6,6 +6,9 @@ import Buyers from './components/Buyers';
 import {Contract} from './contracts/Contract';
 import { ethers } from "ethers";
 import { NFTContract } from './contracts/NFTContract';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import RaffleNFT from './images/RaffleNFT.jpg'
 import bayc from './images/bayc.png'
 import bayc2 from './images/bayc2.jpg'
@@ -142,15 +145,25 @@ function App() {
       let value_ = await ethers.utils.parseEther(`${ticketCost * ticketValue}`)
       try {
         const txn = await raffleContract.buyTicket(ticketValue, { value: value_ });
+        await toast("Thanks, You Bougt Ticket", {
+          position: "top-right",
+          autoClose: 8888
+          });
         await txn.wait();
         await console.log("success")
       } catch(error) {
         if ((error.code === "INSUFFICIENT_FUNDS") || (error.code === -32603) || (error.code === -32000)) {
-          window.alert("You Don't Have Enough Money")
+          toast("You Don't Have Enough Money", {
+            position: "top-right",
+            autoClose: 5000
+            });
         }
       }
     } else {
-        window.alert("You can't buy that many tickets!")
+        toast("You can't buy that many tickets!", {
+          position: "top-right",
+          autoClose: 5000
+          });
     }
   }
 
@@ -220,6 +233,7 @@ function App() {
 
   return (
     <>
+    <ToastContainer/>
       <Connect sendProvider={newAccount} sendWallet={handleWalletAddress}/>
       {/* <ShowWinner show={raffleContract} /> */}
       {first ? 
